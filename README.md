@@ -1,4 +1,4 @@
-# MigicMirrorIoTEdge
+# MagicMirrorIoTEdge
 
 My attempt at putting magicmirror on the IOT Edge and learn on a rock-3a
 
