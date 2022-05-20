@@ -1,0 +1,9 @@
+{
+    "azure-iot-edge.defaultPlatform": {
+        "platform": "arm64v8",
+        "alias": null
+    },
+    "azure-iot-edge.executor.env": {
+        "DOCKER_HOST": "ssh://rock@rock-3a.mcp"
+    }
+}
