@@ -27,4 +27,8 @@ $ sudo apt-get install -y linux-4.19-rock-3-latest
 
 config using the /boot/uEnv.txt
 
-$ nmcli dev wifi connect "wifi_name" password "wifi_password"
+1. Wifi Setup
+- sudo su
+- nmcli r wifi on
+- nmcli dev wifi
+- nmcli dev wifi connect "wifi_name" password "wifi_password"
