@@ -27,8 +27,6 @@ $ sudo apt-get install -y linux-4.19-rock-3-latest
 
 config using the /boot/uEnv.txt
 
-1. Wifi Setup
-- sudo su
-- nmcli r wifi on
-- nmcli dev wifi
-- nmcli dev wifi connect "wifi_name" password "wifi_password"
+1. NO Wifi? : only if you buy the adapter!!!
+
+Install IOT Edge https://docs.microsoft.com/en-us/azure/iot-edge/how-to-provision-single-device-linux-symmetric?view=iotedge-2020-11&tabs=visual-studio-code%2Crpios for Ubuntu 20.04
