@@ -57,3 +57,5 @@ sudo iotedge config mp --connection-string 'PASTE_DEVICE_CONNECTION_STRING_HERE'
 sudo iotedge config apply
 sudo iotedge check
 
+
+When you create a new IoT Edge device, it will display the status code 417 -- The device's deployment configuration is not set in the Azure portal. This status is normal, and means that the device is ready to receive a module deployment.
