@@ -30,3 +30,30 @@ config using the /boot/uEnv.txt
 1. NO Wifi? : only if you buy the adapter!!!
 
 Install IOT Edge https://docs.microsoft.com/en-us/azure/iot-edge/how-to-provision-single-device-linux-symmetric?view=iotedge-2020-11&tabs=visual-studio-code%2Crpios for Ubuntu 20.04
+
+sudo apt install wget
+wget https://packages.microsoft.com/config/ubuntu/20.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
+sudo dpkg -i packages-microsoft-prod.deb
+rm packages-microsoft-prod.deb
+sudo apt-get update; \
+  sudo apt-get install moby-engine
+  
+sudo nano /etc/docker/daemon.json
+ - {
+      "log-driver": "local",
+      "dns": ["ip.of.my.localRouter"]
+   }
+   - sudo systemctl restart docker
+
+sudo nano /etc/sysctl.conf
+    - uncomment line below
+net.ipv4.ip_forward=1
+sudo systemctl restart docker
+   
+ sudo apt-get update; \
+  sudo apt-get install aziot-edge defender-iot-micro-agent-edge
+  
+sudo iotedge config mp --connection-string 'PASTE_DEVICE_CONNECTION_STRING_HERE'
+sudo iotedge config apply
+sudo iotedge check
+
