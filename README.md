@@ -20,7 +20,9 @@ ssh rock@rock-3a.mcp
 
 
 $ sudo apt-get update
+
 $ sudo apt-get install -y rockchip-overlay
+
 $ sudo apt-get install -y linux-4.19-rock-3-latest
 
 config using the /boot/uEnv.txt
